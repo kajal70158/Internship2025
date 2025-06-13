@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /*tag selector*/
+        article {
+            background-color: lightblue;
+            color: red;
+        }
+        /*id selector*/
+        #para1{
+            color: blue;
+            background-color: yellow;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        /*class selector*/
+        .cl1 {
+            color: green;
+            background-color: lightgray;
+        }
+        .cl2 {
+            color:lightgray;
+            background-color: green;
+        }
+        </style>
+</head>
+<body>
+    <!-- CSS
+     3 types of CSS
+        1. Inline CSS -> style attribute in the tag 
+        2. Internal CSS -> <style> tag in the head section
+        3. External CSS -> another file with .css extension
+        *Selectors
+        Tag Selector -> Selects all the elements of that tag
+        Class Selector -> Selects all the elements with that class
+        ID Selector -> Selects the element with that id
+        Universal Selector -> Selects all the elements
+    Property : Value;
+    Property : Value-->
+    <!-- <h1 style="color: red; background-color: aqua;">Hello CSS</h1>
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500; 
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;">This is a paragraph with inline CSS.</p> -->
+
+    <p id="para1">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <article>Lorem ipsum dolor sit amet, consectetur adipisicing.</article>
+    <a href="" style="text-decoration: none;">Facebook</a>
+
+    <p class="cl1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="cl2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="cl1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="cl2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="cl1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="cl2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="cl1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="cl2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="cl1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="cl2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+</body>
+</html>

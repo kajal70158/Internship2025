@@ -1,0 +1,71 @@
+/*pseudo selectors*/
+/* h2{
+    text-align: center;
+    height: 10000px;
+    width: 100%;
+    background-size: cover;
+    background: linear-gradient(45deg,rgb(225, 116, 160),rgb(46, 46, 200),orangered,aqua);
+    background-image: url(https://media.istockphoto.com/id/162515751/photo/moon-over-mountains.jpg?s=612x612&w=0&k=20&c=mKsWiAqN8lOGl6bdnDg9ssY25RSJJbSOk3g0MuDZNXw=);
+}
+h2:hover{
+    padding-top: 350px;
+    background: linear-gradient(45deg,rgb(93, 186, 239),rgb(189, 204, 51),orangered,rgb(117, 195, 195));
+}
+h2:active{
+    padding-top: 350px;
+    background: linear-gradient(45deg,rgb(225, 7, 94),rgb(172, 172, 219),rgb(216, 152, 128),aqua);
+}
+input :focus{
+    background: linear-gradient(45deg,rgb(225, 116, 160),rgb(46, 46, 200),orangered,aqua);
+} */
+#box{
+    width: 200px;
+    height: 200px;
+    border : 2px solid red;
+    transform: rotate(90deg);
+}
+#box:hover{
+     transform: rotate(90deg);
+    transform: rotateX(5turn); 
+     transform: scale(2);
+     border-radius: 50%; 
+    transition-duration: 2s;
+    transform: translateX(500px);
+    /* transition-delay: 1s; */
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+}
+#box2{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function:cubic-bezier(.17,.67,.83,.67) ;
+     animation-iteration-count: infinite;
+    /*animation-direction: alternate-reverse; */
+    /*position after animation stops*/
+    animation-fill-mode: forwards;
+}
+@keyframes move{
+    /* from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(500px)
+    } */
+     0%{
+        transform: translateX(0px);
+     }
+     25%{
+        transform: translate(500px);
+     }
+     50%{
+        transform: translateY(500px) translateX(500px) rotate(360deg);
+     }
+     75%{
+        transform: translateY(500px);
+     }
+     100%{
+        transform: translateY(0px) rotate(0deg);
+     }
+}

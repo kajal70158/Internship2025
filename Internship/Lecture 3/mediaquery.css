@@ -1,0 +1,22 @@
+#container{
+    width: 50vw;
+    height: 50vh;
+    background-color: aqua;
+}
+
+
+/* @media(width>=500px){
+
+} */
+@media(min-width: 500px){
+  #container{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(72, 0, 255);
+ }
+}
+@media(max-width: 800px){
+  #container{
+    background-color: rgb(219, 240, 124);
+ }
+}

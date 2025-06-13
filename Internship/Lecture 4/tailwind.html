@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Text thickness:- bold , semi bold , extr light , medium , light , thin,normal,extra  bold
+    Text decoration:- underline , line-through , no-underline
+    Text-colour : 50 to 900 or 950
+    Text size :- XL,2XL ,3XL........n
+    Leading :- used for space between the headings
+    Border radius:- rounded-sm,md,lg,xl,2xl.....4xl,full
+    Padding:- p-4(all direction) , pt(top),(pl-padding left,ps-padding start),(pr-right,pe-end),pb-bottom,py(top & bottom),px(left,right)
+    padding - inside the border , margin - outside the border
+    Text overflow :- Overflow hidden overflow scroll , overflow-auto
+    Custom Values:- Syntax : text-[30px]
+    Hexadecimal colour opacity - for shades of colour
+    Width :- total width of screen can be divided into parts- 2,3,4,5,6,9,11,12
+    w :- 1/2(50%) , w:1/3(33.3%) w:- 1/12(8.33%) wfull- (100%) , w-screen(100vw) ,w-[70vw]
+    bg image-[(url("location of image")])
+    bg-[linear-gradient(deg,#fff,#kjwb22,#223ac8,...)]
+    Justify-content-center : justify-center
+     Justify-content-space between
+      Justify-content-evenly-even 
+      wrap:- move elements to the next row-->
+    <!--------------Flex---------------->
+    <!-- <div class=" border-2 border-red-500 w-[80vw] h-[80vh]
+    flex flex-col justify-evenly items-center gap-4  ">
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+        <div class="border w-12 h-12">flex</div>
+
+
+    </div> -->
+    <!--------------------------Grid----------------------------->
+    <div class=" border-2 border-red-500 w-[80vw] h-[80vh] 
+     grid grid-cols-4 grid-rows-3 gap-2">
+        <div class="border">
+            <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcXXlnEPcBrIgDRQ531Yf2acMvn3-Wm6kNOQ&s" alt="Car">
+        </div>
+        <div class="border col-span-2 row-span-2">2</div>
+        <div class="border">3</div>
+        <div class="border">4</div>
+        <div class="border">5</div>
+        </div>
+    </div>
+
+    <h1 class="text-[#fb5607] text-3xl font-bold text-center leading-20">
+      Kajal 
+    </h1>
+    <h1 class="text-red-500  text-3xl font-bold text-center overline leading-20">
+      Kajal Nandal
+    </h1>
+    <p class="border-8  border-black-600 text-center rounded border-dashed bg-blue-100 ">Border</p>
+
+    <p class="bg-gradient-to-r  w-[60vw] from-yellow-200 to-red-500 text-center shadow-lg shadow-black">Gradient</p>
+
+    <p class="bg-yellow-200 p-4 pt-10 m-4  mt-10 text-center text-black-900 text-2xl font-bold w-50 mx-auto border animate-ping">padding & margin</p>
+
+
+<p class="bg-red-200 hover:bg-red-500 hover:border hover:shadow-md  
+shadow-red-300 hover:text-white">
+    Hover
+</p>
+
+<p class="bg-red-200 hover:bg-red-500 hover:border hover:shadow-md  
+shadow-red-300 hover:text-white">
+    Active
+</p>
+
+<!--Media Query :- sm: , md: lg: , xl: ,...., 4XL:
+sm:text-red-500 -> Small text will be red for small and more than the small size-->
+<p class="bg-blue-300 sm:bg-red-300 md:bg-green-300 text-shadow-lg text-shadow-red-300 colorRed animate-spin"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+    <!--Overflow-->
+    <p class="bg-green-200 w-20 capitalize text-[30px] overflow-x-scroll">this text is oerflowing</p>
+    <p class="bg-[linear-gradient(110deg,#ffbe0b,#023e8a,#001233)]">Custom Gradient</p>
+  </body>
+</html>
